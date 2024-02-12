@@ -1,0 +1,37 @@
+
+#product_title{
+    color: white;
+}
+#product_overview{
+    color: white;
+    /* width: 800px; */
+    /* margin-left: 550px; */
+    font-size: 30px;
+    
+}
+#product_img{
+    height: 700px;
+    width: 800px;
+    border-radius: 10px;
+    
+}
+#product{
+  text-align: center;
+  
+}
+#product_release_date{
+    color: white;
+    font-size: 30px;
+}
+@media only screen and (max-width:853px) and (min-width:433px){
+    #product_img{
+        width: 400px;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:433px) and (min-width:200px){
+    #product_img{
+        width: 300px;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,113 @@
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 60px;
+   
+}
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+   font-family: 'Poppins', sans-serif;
+    font-family: 'Protest Revolution', sans-serif;;
+}
+
+.movie-item {
+    margin: 10px;
+    text-align: center;
+    padding: 30px 60px;
+    box-shadow:10px 10px 20px rgb(180, 177, 177);
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: rgb(31, 29, 29);
+}
+
+.movie-item img {
+    width: 300px;
+    height: 500px; 
+   margin-top: 20px;
+    border-radius: 50px;
+  
+}
+.movie-item img:hover{
+    transform: scale(1.1);
+}
+#overview{
+    width: 300px;
+    display: none;
+   
+}
+#input{
+  padding: 20px;
+  margin-top: 50px;
+  background-color: rgb(255, 3, 3);
+  width: 500px;
+  
+  
+}
+#input::placeholder{
+    font-size: 30px;
+}
+#input[type="text"]{
+  font-size: 30px;
+  color: white;
+}
+#input_item{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#movie_title{
+    width: 300px;
+}
+#img_back{
+    background-image: url('https://help.nflxext.com/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+#text_name{
+    margin-top: 40px;
+}
+#movie_title{
+    font-size: 20px;
+}
+#release_date{
+    font-size: 20px;
+}
+#movies{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 100px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+#watch{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+#ready{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:517px) and (min-width:200px){
+    .movie-item img {
+        width: 200px;
+        
+    }
+    .movie-item{
+        padding: 10px 20px;
+        position: relative;
+      right: 30px;
+    }
+    #input{
+        width: 300px;
+    }
+   
+}
