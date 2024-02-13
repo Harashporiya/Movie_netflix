@@ -28,6 +28,7 @@ function Movies () {
 
   useEffect(() => {
     fetchTrendingMovies();
+    
   }, []); 
 
   useEffect(() => {
@@ -75,6 +76,7 @@ function Movies () {
                 <p id="movie_title">Movie Name: {movie.title}</p>
                 <p id="overview">{movie.overview}</p>
                 <p id="release_date">Release Date: {movie.release_date}</p>
+                <p>Rating: {movie.vote_average}</p>
               </div>
             </div>
           ))}
