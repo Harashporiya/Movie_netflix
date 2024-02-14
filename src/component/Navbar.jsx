@@ -6,6 +6,7 @@ function Navbar() {
   return (
     <div id="nav">
       <ul>
+        
         <li id="home" onClick={() => navigate("/movie")}><b>Home</b></li>
         
         <li id="netflix"><b>NETFLIX</b></li>

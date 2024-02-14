@@ -1,7 +1,7 @@
 .movie-container {
     display: flex;
     flex-wrap: wrap;
-    color: white;
+    color: rgb(157, 152, 152);
     padding: 60px;
    
 }
@@ -21,6 +21,7 @@ body{
     border-radius: 50px;
     margin-left: 10px;
     background-color: rgb(31, 29, 29);
+    
 }
 
 .movie-item img {
@@ -32,6 +33,10 @@ body{
 }
 .movie-item img:hover{
     transform: scale(1.1);
+    
+}
+.movie-item img{
+    transition: transform 2000ms;
 }
 #overview{
     width: 300px;
@@ -110,4 +115,7 @@ body{
         width: 300px;
     }
    
+}
+#star{
+    color: gold;
 }

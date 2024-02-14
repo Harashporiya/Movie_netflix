@@ -58,7 +58,8 @@ const Product = () => {
             <div id="container_img">
               <div id="watch_text">
                 <h2 id="product_title">{selectedMovie.title}</h2>
-                <p id="product_release_date">Release Date: {selectedMovie.release_date}</p>
+                <p id="product_release_date" variant="contained">Release Date: {selectedMovie.release_date}</p>
+                {Array(Math.floor(selectedMovie.vote_average / 1.7)).fill('⭐️').join(' ')}
                 <p id="product_overview"><b id="b_overview">Overview:</b> {selectedMovie.overview}</p>
                 <Stack spacing={2} direction="row">
                   <Button onClick={handleWatchTrailer} variant="contained">Watch Trailer</Button>

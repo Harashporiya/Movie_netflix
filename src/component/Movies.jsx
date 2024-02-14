@@ -77,6 +77,7 @@ function Movies () {
                 <p id="overview">{movie.overview}</p>
                 <p id="release_date">Release Date: {movie.release_date}</p>
                 <p>Rating: {movie.vote_average}</p>
+               <span id="star"><b>Rating:</b> </span>{Array(Math.floor(movie.vote_average / 1.7)).fill('⭐️').join(' ')}
               </div>
             </div>
           ))}

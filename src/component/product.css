@@ -1,10 +1,10 @@
 
 #product_title{
-    color: white;
+    color: rgb(37, 171, 234);
     font-size: 50px;
 }
 #product_overview{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 238, 255);
     width: 600px;
     font-size: 20px;
     /* padding:0px 200px; */
@@ -12,11 +12,14 @@
 }
 #product_img{
     height: 700px;
-
+    transition: transform 2000ms;
     border-radius: 10px;
     margin: 100px;
     box-shadow:10px 10px 20px rgb(180, 177, 177);
     
+}
+#product_img:hover{
+    transform: scale(1.1);
 }
 #product{
   display: flex;
@@ -25,7 +28,7 @@
   margin: 0px 200px;
 }
 #product_release_date{
-    color: white;
+    color: rgb(12, 252, 204);
     font-size: 30px;
 }
 @media only screen and (max-width:853px) and (min-width:433px){
@@ -51,7 +54,7 @@ iframe{
 #actor_name{
     color: white;
     font-size: 20px;
-    padding: 0px 60px;
+    padding: 0px 50px;
 }
 #actor_profile{
    display: flex;
