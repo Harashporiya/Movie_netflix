@@ -120,5 +120,15 @@ iframe{
      .screen-trailer {
         width: 700px;
      }
+     #movie_actors{
+        width: 300px;
+     }
+     #star{
+        width: 300px;
+     }
 }
 
+#movie_actors{
+    color: rgb(60, 239, 255);
+    font-size: 30px;
+}

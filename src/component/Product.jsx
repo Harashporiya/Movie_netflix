@@ -59,14 +59,14 @@ const Product = () => {
               <div id="watch_text">
                 <h2 id="product_title">{selectedMovie.title}</h2>
                 <p id="product_release_date" variant="contained">Release Date: {selectedMovie.release_date}</p>
-                {Array(Math.floor(selectedMovie.vote_average / 1.7)).fill('⭐️').join(' ')}
+                <div id="star">{Array(Math.floor(selectedMovie.vote_average / 1.7)).fill('⭐️').join(' ')}</div>
                 <p id="product_overview"><b id="b_overview">Overview:</b> {selectedMovie.overview}</p>
                 <Stack spacing={2} direction="row">
                   <Button onClick={handleWatchTrailer} variant="contained">Watch Trailer</Button>
                   <Button onClick={handleHiddenTrailer} variant="outlined">Remove Trailer</Button>
                 </Stack>
               </div>
-
+                 <p id="movie_actors">Movie Actors</p>
               <div id="actor_profile">
                 {actors.map(actor => (
                   <div key={actor.id}>
